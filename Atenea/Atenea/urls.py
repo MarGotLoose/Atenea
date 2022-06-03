@@ -15,7 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mysite import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='home'),
+    path('animalgames/', views.animalGames, name='animalGames'),
+    path('numbergames/', views.numberGames, name='numberGames'),
+    path('whosthisanimalgame/', views.whosThisAnimalGame, name='whosThisAnimalGame'),
+    path('howmanynumbergame/', views.howManyNumberGame, name='howManyNumberGame'),
+    # urls for detection
+    path('detect/', views.main, name='detect'),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
