@@ -19,8 +19,12 @@ def whosThisAnimalGame(request):
     return render(request, 'mysite/animalgame-whosthis.html');
 
 # HOW MANY NUMBER GAME SCREENS
+# initial option
 def howManyNumberGame(request):
     return render(request, 'mysite/numbergame-howmany.html');
+
+def howManyNumberGameA(request):
+    return render(request, 'mysite/numbergame-howmany-a.html');
 
 # def howManyNumberGame2(request):
     # return render(request, 'mysite/numbergame-howmany2.html');

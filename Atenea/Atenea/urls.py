@@ -23,8 +23,10 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('animalgames/', views.animalGames, name='animalGames'),
     path('numbergames/', views.numberGames, name='numberGames'),
-    path('whosthisanimalgame/', views.whosThisAnimalGame, name='whosThisAnimalGame'),
-    path('howmanynumbergame/', views.howManyNumberGame, name='howManyNumberGame'),
+    path('animal/games/whosthisanimalgame/', views.whosThisAnimalGame, name='whosThisAnimalGame'),
+    # initial option
+    path('numbergames/howmanynumbergame/', views.howManyNumberGame, name='howManyNumberGame'),
+    path('numbergames/howmanynumbergamea/', views.howManyNumberGameA, name='howManyNumberGameA'),
     # urls for detection
     path('detect/', views.main, name='detect'),
 ]
