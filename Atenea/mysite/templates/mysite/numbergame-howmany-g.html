@@ -1,0 +1,39 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atenea</title>
+    <link rel="icon" href="{% static 'img/favicon.ico' %}"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+</head>
+
+<body id="bg" style="background-image: url('{% static "img/background.jpg" %}');">
+        <div class="header">
+            <div class="col-md-1" style="padding: 16px; text-align: center;">
+                <a href="{% url 'home' %}" class="btn" role="button">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+                <a href="{% url 'numberGames' %}" class="btn" role="button">
+                    <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div>
+                <h1>¿Cuántos hay?</h1>
+            </div>
+        </div>
+        <div class="container">
+            <img src="{% static '/howmany/people2.jpg' %}">
+        </div>
+    </div>
+</body>
+</html>
